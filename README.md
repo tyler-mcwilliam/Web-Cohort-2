@@ -7,6 +7,7 @@ How to Complete Exercises
 -------------------------
 
 * *Fork* this **Repository** using the **Github UI** to create your own version of the **Repository**
+* *Import* the **Repository** into **CodeSandbox**
 * Go to your version of the **Repository** and create a new **Branch** for your submission
 * Enter your answers into the .js file on that new **Branch** using **CodeSandbox**
 * Create a new **Pull Request** and tag the instructors for review
