@@ -168,7 +168,17 @@ false&&false
 
 function giveDogATreat(dog) {
     // You logic goes here
+}var dog = { 
+    weight: 88,
+    canSit: true,
+    canShake: false
 }
+function giveDogATreat(dog) {
+    return if (dog.weight >50) {
+        console.log("Have a bone!")
+    } else {
+        return console.log("Have a biscuit!");
+    }
 
 // Now a dog must sit or shake to get a treat
 // Check the canSit or canShake variables
