@@ -10,57 +10,57 @@ typeof("potato")
 // What is the output of each of the expressions below?
 
 typeof(15)
-// Prediction:
-// Actual:
+// Prediction: 15
+// Actual: 15
 
 typeof(5.5)
-// Prediction:
-// Actual:
+// Prediction: 5.5
+// Actual:5.5 
 
 typeof(NaN)
-// Prediction:
-// Actual:
+// Prediction:not sure, looks like a word but does not have ""
+// Actual: number
 
 typeof("hello")
-// Prediction:
-// Actual:
+// Prediction: Hello, string
+// Actual: string
 
 typeof(true)
-// Prediction:
-// Actual:
+// Prediction: true/false
+// Actual:boolean
 
 typeof(1 != 2)
-// Prediction:
-// Actual:
+// Prediction: math 
+// Actual:boolean
 
 
 "hamburger" + "s"
-// Prediction:
-// Actual:
+// Prediction:add s to the end of the word
+// Actual: hamburgers
 
 "hamburgers" - "s"
-// Prediction:
-// Actual:
+// Prediction: remove s of the word
+// Actual:NaN not a number 
 
 "1" + "3"
-// Prediction:
-// Actual:
+// Prediction: 13 sum both string
+// Actual:13
 
 "1" - "3"
-// Prediction:
-// Actual:
+// Prediction: NaN (results: JavaScript Converts Strings to Numbers Automatically)
+// Actual:-2
 
 "johnny" + 5
-// Prediction:
-// Actual:
+// Prediction:johnny5
+// Actual:johnny5
 
 "johnny" - 5
-// Prediction:
-// Actual:
+// Prediction:NaN
+// Actual:NaN
 
 99 * "luftbaloons"
-// Prediction:
-// Actual:
+// Prediction:NaN
+// Actual:NaN
 
 // Data Structures
 
@@ -81,7 +81,7 @@ numbers.pop()
 numbers.push(10)
 numbers.unshift(3)
 
-// Your answer goes here.
+// pop removes last number 8, push add number 10 to the end, unshift adds number 3 to the beggining of the array
 
 // What is the return value of the below code sample? Come up with an answer yourself before testing it out in the console.
 
