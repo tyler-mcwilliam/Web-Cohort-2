@@ -11,7 +11,7 @@ typeof "potato";
 
 typeof 15;
 // Prediction:
-// Actual: jkk
+// Actual: jkkkk
 
 typeof 5.5;
 // Prediction:
