@@ -3,62 +3,61 @@
 // For each expression, predict what you think the output will be in a comment (`//`) ***without first running the command***. Then run the expression in the console. Note the actual output in a comment and compare it with your prediction.
 
 // Example
-typeof("potato")
+typeof "potato";
 // Prediction: Vegetable
 // Actual: String
 
 // What is the output of each of the expressions below?
 
-typeof(15)
+typeof 15;
 // Prediction:
 // Actual:
 
-typeof(5.5)
+typeof 5.5;
 // Prediction:
 // Actual:
 
-typeof(NaN)
+typeof NaN;
 // Prediction:
 // Actual:
 
-typeof("hello")
+typeof "hello";
 // Prediction:
 // Actual:
 
-typeof(true)
+typeof true;
 // Prediction:
 // Actual:
 
-typeof(1 != 2)
+typeof (1 != 2);
 // Prediction:
 // Actual:
 
-
-"hamburger" + "s"
+"hamburger" + "s";
 // Prediction:
 // Actual:
 
-"hamburgers" - "s"
+"hamburgers" - "s";
 // Prediction:
 // Actual:
 
-"1" + "3"
+"1" + "3";
 // Prediction:
 // Actual:
 
-"1" - "3"
+"1" - "3";
 // Prediction:
 // Actual:
 
-"johnny" + 5
+"johnny" + 5;
 // Prediction:
 // Actual:
 
-"johnny" - 5
+"johnny" - 5;
 // Prediction:
 // Actual:
 
-99 * "luftbaloons"
+99 * "luftbaloons";
 // Prediction:
 // Actual:
 
@@ -76,31 +75,31 @@ typeof(1 != 2)
 
 // What will the contents of the below arrays be after the code samples are executed? Come up with an answer yourself before testing it out in the console.
 
-var numbers = [2, 4, 6, 8]
-numbers.pop()
-numbers.push(10)
-numbers.unshift(3)
+var numbers = [2, 4, 6, 8];
+numbers.pop();
+numbers.push(10);
+numbers.unshift(3);
 
 // Your answer goes here.
 
 // What is the return value of the below code sample? Come up with an answer yourself before testing it out in the console.
 
-var morse = ["dot", "pause", "dot"]
-var moreMorse = morse.join(" dash ")
-moreMorse.split(" ")
+var morse = ["dot", "pause", "dot"];
+var moreMorse = morse.join(" dash ");
+moreMorse.split(" ");
 
 // Your answer goes here.
 
 // What will the contents of the below array be after the below code sample is executed? Come up with an answer yourself before testing it out in the console.
 
-var bands = []
-var beatles = ["Paul", "John", "George", "Pete"]
-var stones = ["Brian", "Mick", "Keith", "Ronnie", "Charlie"]
-bands.push(beatles)
-bands.unshift(stones)
-bands[bands.length - 1].pop()
-bands[0].shift()
-bands[1][3] = "Ringo"
+var bands = [];
+var beatles = ["Paul", "John", "George", "Pete"];
+var stones = ["Brian", "Mick", "Keith", "Ronnie", "Charlie"];
+bands.push(beatles);
+bands.unshift(stones);
+bands[bands.length - 1].pop();
+bands[0].shift();
+bands[1][3] = "Ringo";
 
 // Your answer goes here.
 
@@ -109,52 +108,52 @@ bands[1][3] = "Ringo"
 // Write your expected result for the OR and AND operations below each statement. Fact check yourself with browser console.
 
 // OR
-true||true
+true || true;
 // Prediction:
 // Actual:
 
-true||false
+true || false;
 // Prediction:
 // Actual:
 
-false||true
+false || true;
 // Prediction:
 // Actual:
 
-false||false
+false || false;
 // Prediction:
 // Actual:
 
-3||3
+3 || 3;
 // Prediction:
 // Actual:
 
-1||5
+1 || 5;
 // Prediction:
 // Actual:
 
 // AND
-true&&true
+true && true;
 // Prediction:
 // Actual:
 
-true&&false
+true && false;
 // Prediction:
 // Actual:
 
-false&&true
+false && true;
 // Prediction:
 // Actual:
 
-false&&false
+false && false;
 // Prediction:
 // Actual:
 
-3&&3
+3 && 3;
 // Prediction:
 // Actual:
 
-1&&5
+1 && 5;
 // Prediction:
 // Actual:
 
@@ -166,8 +165,19 @@ false&&false
 // If a dog is large (over 50 pounds), print out "Have a bone!".
 // If a dog is small (under 50 pounds), print out "Have a biscuit!"
 
+var dog = {
+  weight: 88,
+  canSit: true,
+  canShake: false,
+};
+
 function giveDogATreat(dog) {
-    // You logic goes here
+  // You logic goes here
+  if (dog.weight > 50) {
+    return console.log("Have a bone!");
+  } else {
+    return console.log("Have a biscuit!");
+  }
 }
 
 // Now a dog must sit or shake to get a treat
@@ -176,5 +186,5 @@ function giveDogATreat(dog) {
 // If the dog can't sit or shake, teach them to sit or shake by updating their attributes and then check again
 
 function giveDogATreatAfterTrick(dog) {
-    // Your logic goes here
+  // Your logic goes here
 }
