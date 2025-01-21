@@ -10,57 +10,57 @@ typeof("potato")
 // What is the output of each of the expressions below?
 
 typeof(15)
-// Prediction:
-// Actual:
+// Prediction: number
+// Actual: number
 
 typeof(5.5)
-// Prediction:
-// Actual:
+// Prediction: number
+// Actual: number
 
 typeof(NaN)
-// Prediction:
-// Actual:
+// Prediction: Undefined
+// Actual: Number
 
 typeof("hello")
-// Prediction:
-// Actual:
+// Prediction: string
+// Actual: string
 
 typeof(true)
-// Prediction:
-// Actual:
+// Prediction: Bool
+// Actual: boolean
 
 typeof(1 != 2)
-// Prediction:
-// Actual:
+// Prediction: boolean
+// Actual: boolean
 
 
 "hamburger" + "s"
-// Prediction:
-// Actual:
+// Prediction: hamburgers
+// Actual: hamburgers
 
 "hamburgers" - "s"
-// Prediction:
-// Actual:
+// Prediction: 
+// Actual: NaN
 
 "1" + "3"
-// Prediction:
-// Actual:
+// Prediction: 13
+// Actual: 13
 
 "1" - "3"
-// Prediction:
-// Actual:
+// Prediction: NaN
+// Actual: -2
 
 "johnny" + 5
-// Prediction:
-// Actual:
+// Prediction: johnny5
+// Actual: johnny5
 
 "johnny" - 5
-// Prediction:
-// Actual:
+// Prediction: NaN
+// Actual: NaN
 
 99 * "luftbaloons"
-// Prediction:
-// Actual:
+// Prediction: NaN
+// Actual: NaN
 
 // Data Structures
 
@@ -81,7 +81,7 @@ numbers.pop()
 numbers.push(10)
 numbers.unshift(3)
 
-// Your answer goes here.
+// Your answer goes here. [3, 2, 4, 6, 10]
 
 // What is the return value of the below code sample? Come up with an answer yourself before testing it out in the console.
 
@@ -89,7 +89,7 @@ var morse = ["dot", "pause", "dot"]
 var moreMorse = morse.join(" dash ")
 moreMorse.split(" ")
 
-// Your answer goes here.
+// Your answer goes here. ['dot', 'dash', 'pause', 'dash', 'dot']
 
 // What will the contents of the below array be after the below code sample is executed? Come up with an answer yourself before testing it out in the console.
 
@@ -102,7 +102,7 @@ bands[bands.length - 1].pop()
 bands[0].shift()
 bands[1][3] = "Ringo"
 
-// Your answer goes here.
+// Your answer goes here. [['Mick', 'Keith', 'Ronnie', 'Charlie'], ['Paul', 'John', 'George', 'Ringo']]
 
 // Booleans & Comparison Operators
 
@@ -110,53 +110,53 @@ bands[1][3] = "Ringo"
 
 // OR
 true||true
-// Prediction:
-// Actual:
+// Prediction: true
+// Actual: true
 
 true||false
-// Prediction:
-// Actual:
+// Prediction: true
+// Actual: true
 
 false||true
-// Prediction:
-// Actual:
+// Prediction: true
+// Actual: true
 
 false||false
-// Prediction:
-// Actual:
+// Prediction: false
+// Actual: false
 
 3||3
-// Prediction:
-// Actual:
+// Prediction: true
+// Actual: 3
 
 1||5
-// Prediction:
-// Actual:
+// Prediction: not sure
+// Actual: 1
 
 // AND
 true&&true
-// Prediction:
-// Actual:
+// Prediction: true
+// Actual: true
 
 true&&false
-// Prediction:
-// Actual:
+// Prediction: false
+// Actual: false
 
 false&&true
-// Prediction:
-// Actual:
+// Prediction: false
+// Actual: false
 
 false&&false
-// Prediction:
-// Actual:
+// Prediction: false
+// Actual: false
 
 3&&3
-// Prediction:
-// Actual:
+// Prediction: 3
+// Actual: 3
 
 1&&5
-// Prediction:
-// Actual:
+// Prediction: 1
+// Actual: 5
 
 // Chained Logic
 
@@ -168,6 +168,12 @@ false&&false
 
 function giveDogATreat(dog) {
     // You logic goes here
+
+    if (dog.weight > 50){
+        console.log("Have a bone!")
+    } else {
+        "Have a biscuit!"
+    }
 }
 
 // Now a dog must sit or shake to get a treat
@@ -177,4 +183,11 @@ function giveDogATreat(dog) {
 
 function giveDogATreatAfterTrick(dog) {
     // Your logic goes here
+
+    if (dog.canSit || dog.canShake){
+        giveDogATreat(dog);
+    } else{
+        dog.canSit = true;
+        dog.canShake = true;
+    }
 }
