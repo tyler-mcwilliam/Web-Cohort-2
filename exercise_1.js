@@ -11,56 +11,56 @@ typeof("potato")
 
 typeof(15)
 // Prediction:
-// Actual:
+// Actual:number
 
 typeof(5.5)
 // Prediction:
-// Actual:
+// Actual:number
 
 typeof(NaN)
 // Prediction:
-// Actual:
+// Actual:number
 
 typeof("hello")
 // Prediction:
-// Actual:
+// Actual:string
 
 typeof(true)
 // Prediction:
-// Actual:
+// Actual:boolean
 
 typeof(1 != 2)
 // Prediction:
-// Actual:
+// Actual:boolean
 
 
 "hamburger" + "s"
 // Prediction:
-// Actual:
+// Actual:hamburgers
 
 "hamburgers" - "s"
 // Prediction:
-// Actual:
+// Actual:NaN
 
 "1" + "3"
 // Prediction:
-// Actual:
+// Actual:13
 
 "1" - "3"
 // Prediction:
-// Actual:
+// Actual:-2
 
 "johnny" + 5
 // Prediction:
-// Actual:
+// Actual:johnny5
 
 "johnny" - 5
 // Prediction:
-// Actual:
+// Actual:NaN
 
 99 * "luftbaloons"
 // Prediction:
-// Actual:
+// Actual:NaN
 
 // Data Structures
 
@@ -81,7 +81,7 @@ numbers.pop()
 numbers.push(10)
 numbers.unshift(3)
 
-// Your answer goes here.
+// Your answer goes here. 5
 
 // What is the return value of the below code sample? Come up with an answer yourself before testing it out in the console.
 
@@ -89,7 +89,7 @@ var morse = ["dot", "pause", "dot"]
 var moreMorse = morse.join(" dash ")
 moreMorse.split(" ")
 
-// Your answer goes here.
+// Your answer goes here. (5) ['dot', 'dash', 'pause', 'dash', 'dot']
 
 // What will the contents of the below array be after the below code sample is executed? Come up with an answer yourself before testing it out in the console.
 
@@ -102,7 +102,7 @@ bands[bands.length - 1].pop()
 bands[0].shift()
 bands[1][3] = "Ringo"
 
-// Your answer goes here.
+// Your answer goes here. Ringo 
 
 // Booleans & Comparison Operators
 
@@ -110,53 +110,53 @@ bands[1][3] = "Ringo"
 
 // OR
 true||true
-// Prediction:
-// Actual:
+// Prediction:True
+// Actual:True
 
 true||false
-// Prediction:
-// Actual:
+// Prediction:True
+// Actual:True
 
 false||true
-// Prediction:
-// Actual:
+// Prediction:True
+// Actual:False
 
 false||false
-// Prediction:
-// Actual:
+// Prediction:False
+// Actual:False
 
 3||3
-// Prediction:
-// Actual:
+// Prediction:3
+// Actual:3
 
 1||5
-// Prediction:
-// Actual:
+// Prediction:1
+// Actual:5
 
 // AND
 true&&true
-// Prediction:
-// Actual:
+// Prediction:true
+// Actual:true
 
-true&&false
-// Prediction:
-// Actual:
+true&&false 
+// Prediction:true
+// Actual:false
 
 false&&true
-// Prediction:
-// Actual:
+// Prediction:false
+// Actual:false
 
 false&&false
-// Prediction:
-// Actual:
+// Prediction:false
+// Actual:false
 
 3&&3
-// Prediction:
-// Actual:
+// Prediction:3
+// Actual:3
 
 1&&5
-// Prediction:
-// Actual:
+// Prediction:1
+// Actual:5
 
 // Chained Logic
 
@@ -166,8 +166,20 @@ false&&false
 // If a dog is large (over 50 pounds), print out "Have a bone!".
 // If a dog is small (under 50 pounds), print out "Have a biscuit!"
 
+var dog = {
+    weight: 88,
+    canSit: true,
+    canShake: false
+}
+
+
+
 function giveDogATreat(dog) {
-    // You logic goes here
+    if (dog.weight > 50) {
+        console.log("Have a bone!");
+    } else {
+        console.log("Have a biscuit!");
+    }
 }
 
 // Now a dog must sit or shake to get a treat
