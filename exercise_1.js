@@ -6,62 +6,63 @@
 typeof("potato")
 // Prediction: Vegetable
 // Actual: String
-
+String
 // What is the output of each of the expressions below?
 
 typeof(15)
 // Prediction:
 // Actual:
+number
 
 typeof(5.5)
 // Prediction:
 // Actual:
-
+Number
 typeof(NaN)
 // Prediction:
 // Actual:
-
+Null
 typeof("hello")
 // Prediction:
 // Actual:
-
+String
 typeof(true)
 // Prediction:
 // Actual:
-
+Boolean
 typeof(1 != 2)
 // Prediction:
 // Actual:
-
+Boolean
 
 "hamburger" + "s"
 // Prediction:
 // Actual:
-
+hamburgers
 "hamburgers" - "s"
 // Prediction:
 // Actual:
-
+Nan
 "1" + "3"
 // Prediction:
 // Actual:
-
+13
 "1" - "3"
 // Prediction:
 // Actual:
-
+-2
 "johnny" + 5
 // Prediction:
 // Actual:
-
+Johnny5
 "johnny" - 5
 // Prediction:
 // Actual:
-
+Nan
 99 * "luftbaloons"
 // Prediction:
 // Actual:
-
+Nan
 // Data Structures
 
 // Arrays
@@ -77,9 +78,11 @@ typeof(1 != 2)
 // What will the contents of the below arrays be after the code samples are executed? Come up with an answer yourself before testing it out in the console.
 
 var numbers = [2, 4, 6, 8]
-numbers.pop()
-numbers.push(10)
-numbers.unshift(3)
+Console.log(number)
+
+numbers.pop()//8
+numbers.push(10)//4 provides the number of the nuew array
+numbers.unshift(3)//5
 
 // Your answer goes here.
 
@@ -88,19 +91,21 @@ numbers.unshift(3)
 var morse = ["dot", "pause", "dot"]
 var moreMorse = morse.join(" dash ")
 moreMorse.split(" ")
-
+dot dash pause dash dot
 // Your answer goes here.
-
+(23) ['d', 'o', 't', ' ', 'd', …]
 // What will the contents of the below array be after the below code sample is executed? Come up with an answer yourself before testing it out in the console.
 
 var bands = []
 var beatles = ["Paul", "John", "George", "Pete"]
 var stones = ["Brian", "Mick", "Keith", "Ronnie", "Charlie"]
-bands.push(beatles)
-bands.unshift(stones)
-bands[bands.length - 1].pop()
-bands[0].shift()
-bands[1][3] = "Ringo"
+bands.push(beatles)//1
+bands.unshift(stones)//2
+bands[bands.length - 1].pop()//Pete
+bands[0].shift()//Brian
+bands[1][3] = "Ringo"//1
+: 
+(4) ['Paul', 'John', 'George', 'Ringo']
 
 // Your answer goes here.
 
@@ -112,52 +117,52 @@ bands[1][3] = "Ringo"
 true||true
 // Prediction:
 // Actual:
-
+true
 true||false
 // Prediction:
 // Actual:
-
+true
 false||true
 // Prediction:
 // Actual:
-
+true
 false||false
 // Prediction:
 // Actual:
-
+false
 3||3
 // Prediction:
 // Actual:
-
+3
 1||5
 // Prediction:
 // Actual:
-
+1
 // AND
 true&&true
 // Prediction:
 // Actual:
-
+true
 true&&false
 // Prediction:
 // Actual:
-
+false
 false&&true
 // Prediction:
 // Actual:
-
+false
 false&&false
 // Prediction:
 // Actual:
-
+false
 3&&3
 // Prediction:
 // Actual:
-
+3
 1&&5
 // Prediction:
 // Actual:
-
+5
 // Chained Logic
 
 // Chain some logic together to create a function
@@ -168,6 +173,13 @@ false&&false
 
 function giveDogATreat(dog) {
     // You logic goes here
+weight: 51
+canSit: true
+canShake: true
+if (dog.weight > 50) {
+console.log("Have a bone")
+}else{ console.log("have a biscuit!")
+}
 }
 
 // Now a dog must sit or shake to get a treat
