@@ -2,7 +2,7 @@
 
 // For each expression, predict what you think the output will be in a comment (`//`) ***without first running the command***. Then run the expression in the console. Note the actual output in a comment and compare it with your prediction.
 
-// trying to submit again
+// trying to submit again again
 typeof("potato")
 // Prediction: Vegetable
 // Actual: String
