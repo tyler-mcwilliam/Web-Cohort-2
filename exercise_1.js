@@ -2,65 +2,65 @@
 
 // For each expression, predict what you think the output will be in a comment (`//`) ***without first running the command***. Then run the expression in the console. Note the actual output in a comment and compare it with your prediction.
 
-// Example
+// trying to submit again again again
 typeof("potato")
 // Prediction: Vegetable
 // Actual: String
 
-// What is the output of each of the expressions below?
+// What is the output of each of the expressions below? hello
 
 typeof(15)
-// Prediction:
-// Actual:
+// Prediction:Number Number
+// Actual:Number
 
 typeof(5.5)
-// Prediction:
-// Actual:
+// Prediction:Number 
+// Actual:Number
 
 typeof(NaN)
-// Prediction:
-// Actual:
+// Prediction:Null or Number
+// Actual:Number
 
 typeof("hello")
-// Prediction:
-// Actual:
+// Prediction:Text
+// Actual:String
 
 typeof(true)
-// Prediction:
-// Actual:
+// Prediction:Boolean
+// Actual:Boolean
 
 typeof(1 != 2)
-// Prediction:
-// Actual:
+// Prediction:Boolean
+// Actual:Boolean
 
 
 "hamburger" + "s"
-// Prediction:
-// Actual:
+// Prediction:hamburgers
+// Actual:hamburgers
 
 "hamburgers" - "s"
-// Prediction:
-// Actual:
+// Prediction:hamburger
+// Actual:hamburger
 
 "1" + "3"
-// Prediction:
-// Actual:
+// Prediction:4
+// Actual:13
 
 "1" - "3"
-// Prediction:
-// Actual:
+// Prediction:-2
+// Actual:-2
 
 "johnny" + 5
-// Prediction:
-// Actual:
+// Prediction:johnny5
+// Actual:johnny5
 
 "johnny" - 5
-// Prediction:
-// Actual:
+// Prediction:No clue
+// Actual:NaN
 
 99 * "luftbaloons"
-// Prediction:
-// Actual:
+// Prediction:NaN
+// Actual:NaN
 
 // Data Structures
 
@@ -81,7 +81,7 @@ numbers.pop()
 numbers.push(10)
 numbers.unshift(3)
 
-// Your answer goes here.
+// 8, 4, 5
 
 // What is the return value of the below code sample? Come up with an answer yourself before testing it out in the console.
 
@@ -89,7 +89,11 @@ var morse = ["dot", "pause", "dot"]
 var moreMorse = morse.join(" dash ")
 moreMorse.split(" ")
 
-// Your answer goes here.
+// ["dot",
+    "dash",
+    "pause",
+    "dash",
+    "dot"]
 
 // What will the contents of the below array be after the below code sample is executed? Come up with an answer yourself before testing it out in the console.
 
@@ -102,7 +106,7 @@ bands[bands.length - 1].pop()
 bands[0].shift()
 bands[1][3] = "Ringo"
 
-// Your answer goes here.
+// 1, 2, Pete, Brian, Ringo
 
 // Booleans & Comparison Operators
 
@@ -110,53 +114,53 @@ bands[1][3] = "Ringo"
 
 // OR
 true||true
-// Prediction:
-// Actual:
+// Prediction:True
+// Actual:true
 
 true||false
-// Prediction:
-// Actual:
+// Prediction:true
+// Actual:true
 
 false||true
-// Prediction:
-// Actual:
+// Prediction:false
+// Actual:true
 
 false||false
-// Prediction:
-// Actual:
+// Prediction:false
+// Actual:false
 
 3||3
-// Prediction:
-// Actual:
+// Prediction:3
+// Actual:3
 
 1||5
-// Prediction:
-// Actual:
+// Prediction:1 or 5
+// Actual:1
 
 // AND
 true&&true
-// Prediction:
-// Actual:
+// Prediction:true
+// Actual:true
 
 true&&false
-// Prediction:
-// Actual:
+// Prediction:true
+// Actual:false
 
 false&&true
-// Prediction:
-// Actual:
+// Prediction:false
+// Actual:false
 
 false&&false
-// Prediction:
-// Actual:
+// Prediction:false
+// Actual:false
 
 3&&3
-// Prediction:
-// Actual:
+// Prediction:3
+// Actual:3
 
 1&&5
-// Prediction:
-// Actual:
+// Prediction:1
+// Actual:5
 
 // Chained Logic
 
@@ -166,8 +170,17 @@ false&&false
 // If a dog is large (over 50 pounds), print out "Have a bone!".
 // If a dog is small (under 50 pounds), print out "Have a biscuit!"
 
+var dog = {
+    weight: 88
+    canSit: true
+    canShake: false
+} 
+
 function giveDogATreat(dog) {
     // You logic goes here
+return if (dog weight > 50) {console.log("Have a bone!") 
+    else 
+{return console.log("Have a biscuit!")}
 }
 
 // Now a dog must sit or shake to get a treat
