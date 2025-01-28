@@ -18,7 +18,7 @@ typeof(5.5)
 // Actual:Number
 
 typeof(NaN)
-// Prediction:Null or Numbers
+// Prediction:Null or Number
 // Actual:Number
 
 typeof("hello")
@@ -36,11 +36,11 @@ typeof(1 != 2)
 
 "hamburger" + "s"
 // Prediction:hamburgers
-// Actual:
+// Actual:hamburgers
 
 "hamburgers" - "s"
 // Prediction:hamburger
-// Actual:
+// Actual:hamburger
 
 "1" + "3"
 // Prediction:4
