@@ -11,6 +11,7 @@ How to Complete Exercises
 * Go to your version of the **Repository** and create a new **Branch** for your submission
 * Enter your answers into the .js file on that new **Branch** using **CodeSandbox**
 * *Commit* and *Push* your changes to the file on the **Branch** you created
+* ^^This is where we had some trouble last week - I found opening the Pull Request from CodeSandbox fixed this issue
 * Create a new **Pull Request** and tag the instructors for review
 * Instructors will perform **Code Review** and approve your answers
 * *Merge* your **Pull Request** into your **Main Branch** to complete the assignment
