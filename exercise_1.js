@@ -18,7 +18,7 @@ typeof(5.5)
 // Actual:Number
 
 typeof(NaN)
-// Prediction:Null
+// Prediction:Null or Number
 // Actual:Number
 
 typeof("hello")
