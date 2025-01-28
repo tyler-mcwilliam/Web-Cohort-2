@@ -10,11 +10,11 @@ typeof("potato")
 // What is the output of each of the expressions below?
 
 typeof(15)
-// Prediction:Number
+// Prediction:Number Numner
 // Actual:Number
 
 typeof(5.5)
-// Prediction:Number
+// Prediction:Number 
 // Actual:Number
 
 typeof(NaN)
